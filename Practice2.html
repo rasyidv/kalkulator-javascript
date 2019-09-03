@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Sederhana</title>
+<script>
+  function tambah(){
+  a=eval(document.getElementById("a").value);
+  b=eval(document.getElementById("b").value);
+  c=a+b;
+  document.getElementById("c").value=c;
+  }
+  function kurang(){
+  d=eval(document.getElementById("d").value);
+  e=eval(document.getElementById("e").value);
+  f=d-e;
+  document.getElementById("f").value=f;
+  }
+  function kali(){
+  g=eval(document.getElementById("g").value);
+  h=eval(document.getElementById("h").value);
+  i=g*h;
+  document.getElementById("i").value=i;
+  }
+  function bagi(){
+  j=eval(document.getElementById("j").value);
+  k=eval(document.getElementById("k").value);
+  l=j/k;
+  document.getElementById("l").value=l;
+  }
+</script>
+</head>
+<body>
+  <h4>Simple Calculator</h4>
+    <h6>Operator +</h6>
+    <input type="text" id="a" name="a"> <b>+</b> <input type="text" id="b" name="b">
+    <input type="button" value="=" onClick="tambah()">
+    <input type="text" id="c" name="c">
+    
+    <h6>Operator -</h6>
+    <input type="text" id="d" name="d"> <b>-</b> <input type="text" id="e" name="e">
+    <input type="button" value="=" onClick="kurang()">
+    <input type="text" id="f" name="f">
+    
+    <h6>Operator *</h6>
+    <input type="text" id="g" name="g"> <b>*</b> <input type="text" id="h" name="h">
+    <input type="button" value="=" onClick="kali()">
+    <input type="text" id="i" name="i">
+    
+    <h6>Operator /</h6>
+    <input type="text" id="j" name="j"> <b>/</b> <input type="text" id="k" name="k">
+    <input type="button" value="=" onClick="bagi()">  
+    <input type="text" id="l" name="l">
+</body>
+</html>
